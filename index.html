@@ -3,38 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pork Belly Creative (PBC) is a Taiwan-based company building long-term value through IP, creative production, and product-minded execution." />
   <title>Pork Belly Creative</title>
-  <links/css/style.css
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
 <header>
   <nav>
-    index.htmlPBC</a>
+    <a class="logo" href="index.html" aria-label="Pork Belly Creative Home">PBC</a>
+
     <ul>
-      <li>services.htmlWhat We Do</a></li>
-      <li>ip.htmlIP & Products</a></li>
+      <li><a href="services.html">What We Do</a></li>
+      <li><a href="ip.html">IP & Products</a></li>
       <li><a href="studio.html">Studio</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a class="nav-cta" href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
   <section class="hero">
-    <h1>We build IP, brands, and creative systems.</h1>
-    <p>
-      Pork Belly Creative is a Taiwan‑based company operating at the intersection
-      of intellectual property, design, and technology.
+    <p class="eyebrow">Taiwan-based • IP • Creative • Systems</p>
+    <h1>More than a licensing agency — we build IP with a product mindset.</h1>
+    <p class="lead">
+      Pork Belly Creative is a Taiwan-based company operating at the intersection of intellectual property,
+      creative production, and technology-driven execution. We help creators and brands grow with clarity,
+      trust, and scalable systems.
     </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="services.html">Explore what we do</a>
+      <a class="btn btn-ghost" href="ip.html">View IP partners</a>
+    </div>
+
+    <div class="pill-row" aria-label="Key pillars">
+      <span class="pill">IP Strategy</span>
+      <span class="pill">Brand Collaborations</span>
+      <span class="pill">Creative Production</span>
+      <span class="pill">Systems & Tools</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What we build</h2>
+    <p class="muted">
+      We focus on repeatability — making partnerships easier to run, easier to scale, and easier to trust.
+    </p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>IP Strategy & Licensing</h3>
+        <p>
+          Market entry, positioning, partner selection, negotiation support, and licensing operations —
+          designed to protect the IP and unlock sustainable growth.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Brand Collaborations</h3>
+        <p>
+          Collaboration concepts that feel native to the IP and valuable to the brand — from deal structure
+          to launch planning and execution alignment.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Studio & Systems</h3>
+        <p>
+          A studio with startup DNA: clean workflows, documentation, lightweight tooling, and pragmatic
+          experimentation that reduces friction for partners.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Partners we represent in Taiwan</h2>
+    <p class="muted">
+      Selected IPs with long-term collaboration potential. (Exclusive representation in Taiwan.)
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Bichi Mao</h3>
+        <p>
+          A mature character IP with strong collaboration history and global audience reach.
+          Our focus: Taiwan market strategy, partner development, and long-term growth.
+        </p>
+        <p class="card-link"><a href="ip.html">Learn more →</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Cheesy Duck</h3>
+        <p>
+          A brand-friendly character IP built for expressive storytelling and merchandise.
+          Our focus: positioning, collaboration pipeline, and scalable licensing operations.
+        </p>
+        <p class="card-link"><a href="ip.html">Learn more →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="cta-inner">
+      <h2>Let’s build something that lasts.</h2>
+      <p class="muted">
+        If you’re a creator, brand, or platform looking for a Taiwan partner with clarity and momentum,
+        reach out — we respond quickly and keep it practical.
+      </p>
+      <a class="btn btn-primary" href="contact.html">Contact PBC</a>
+      <p class="cta-alt">
+        Or email us at
+        <a href="mailto:contact@porkbellycreative.tw">contact@porkbellycreative.tw</a>
+      </p>
+    </div>
   </section>
 </main>
 
 <footer>
-  <p>© Pork Belly Creative</p>
+  <div class="footer-inner">
+    <p>© <span id="year"></span> Pork Belly Creative</p>
+    <p class="muted">
+      <a href="mailto:contact@porkbellycreative.tw">contact@porkbellycreative.tw</a>
+    </p>
+  </div>
 </footer>
+
+<script>
+  // Keeps the footer year current without any build tools
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
-``
